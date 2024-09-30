@@ -9,7 +9,7 @@ TWILIO_AUTH = "YOUR API AUTHENTICATIO KEY"
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
 STOCK_API_KEY = "YOUR API KEY"
-NEWS_API_KEY = "4e0ce6103fde4e17b5e49cac283b3afb"
+NEWS_API_KEY = "NEWS_API+KEY"
  ## STEP 1: Use https://www.alphavantage.co/documentation/#daily
 # When stock price increase/decreases by 5% between yesterday and the day before yesterday then print("Get News").
 
@@ -64,8 +64,8 @@ if abs(percentage_difference) > 1:
     for articles in formated_article:
         message = client.messages.create(
             body = articles,
-            from_ = "+12407248717",
-            to = "+919315688647"
+            from_ = "YOUR TWILO MOBILE NUMBER",
+            to = "YOUR MOBILE NUMBER"
 
         )
 
